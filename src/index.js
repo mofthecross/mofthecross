@@ -1,9 +1,20 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter, Match, Miss } from 'react-router';
+
+
+import Main from './components/Main';
+import NotFound from './components/NotFound'
 
 const Root = () => {
   return (
-    <div> mofthecross </div>
+    <BrowserRouter>
+      <div>
+        <Match exactly pattern="/" component={ Main }/>
+
+        <Miss component={ NotFound }/>
+      </div>
+    </BrowserRouter>
   )
 }
 
