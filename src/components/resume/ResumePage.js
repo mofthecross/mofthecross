@@ -1,7 +1,8 @@
 import React from 'react';
 import Education from './Education';
+import Experience from './Experience'
 
-import { degree } from '../../data/resumeData'
+import { degree, experience } from '../../data/resumeData'
 
 const sections = [
   'Education',
@@ -15,18 +16,20 @@ class ResumePage extends React.Component {
   constructor(){
     super();
     this.state = {
-      degrees: degree
+      degrees: null,
+      experience: null
     }
     this.loadResumeData = this.loadResumeData.bind(this);
   }
 
   loadResumeData() {
     this.setState({
-      degree: degree
+      degrees: degree,
+      experience: experience
     })
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.loadResumeData();
   }
 
@@ -38,7 +41,7 @@ class ResumePage extends React.Component {
           <h2>Resume</h2>
         </header>
         <Education degrees={this.state.degrees}  />
-
+        <Experience companies={this.state.experience}/>
       </article>
     )
   }
