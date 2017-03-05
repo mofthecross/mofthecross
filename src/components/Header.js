@@ -1,10 +1,24 @@
 import React from 'react';
+import navigationLinks from '../data/navigationLinks';
+import { Link, IndexLink } from 'react-router';
 
  const Header = () => {
     return (
-      <div>
+      <div className="header-wrapper">
         <header>
-          Michael De La Cruz's Page
+          <nav className="header__nav">
+            <ul>
+              {
+                navigationLinks.filter( link => !link.index).map(link => (
+                  <li key={link.label}>
+                    <Link to={link.link}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))
+              }
+            </ul>
+          </nav>
         </header>
       </div>
   )
