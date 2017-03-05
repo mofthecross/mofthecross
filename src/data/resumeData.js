@@ -27,5 +27,61 @@ module.exports = {
         "Automated weekly time reports by developing JavaScript system to triggers updates to CSV spreadsheets."
       ]
     }
+  ],
+
+  projects: [
+    {
+      name: "Noise",
+      index: 0,
+      desc: "Encrypted native mobile chat service for the privacy concerned to securely communicate through instant messaging",
+      start: "08/01/2016",
+      end:"09/01/2016",
+      role: "Software Engineer",
+      accomplishments: [
+        "Developed native iOS chat application in Swift, creating auto-resizable message bubble cells with UICollectionViewFlowLayout and JSQmessages  to achieve iMessage UI design pattern.",
+        "Reduced latency in rendering messages by ~66% by integrating  Realm.IO for local state persistence. ",
+        "Enabled client-server bidirectional communication with Socket.IO on a RESTful API built with Node.js.",
+        "Engineered end-to-end encrypted communication by implementing Diffie-Hellman Key-Exchange algorithm in Swift in conjunction with CryptoSwift ChaCha20 cipher to decrypt and encrypt messages.",
+        "Performed statistical analysis while conforming to Differential Privacy with Google’s RAPPOR algorithm to determine the most commonly used words (trending topics)."
+      ]
+    },
+    {
+      name: "Vime",
+      index: 2,
+      desc: "Video messaging platform where family members can record and share their words of encouragement with loved ones",
+      start: "07/01/2016",
+      end:"08/01/2016",
+      role: "Software Engineer",
+      accomplishments: [
+        "Minimized HTTP requests to Node.js server by ~75% through utilizing React-Router for front-end routing.",
+        "Utilized the Webpack build tool to compile ES6 with Babel into ES5 bundle script served by an Express server.",
+        "Followed Google Material Design principles by creating front-end views with MaterializeCSS and custom CSS3.",
+        "Saved team ~10 hours weekly in debugging by modularizing the backend codebase with RESTful endpoints."
+      ]
+    },
+    {
+      name: "Escape",
+      index: 3,
+      desc: "Recommendation based travel itinerary providing tourists with a full day of activities based on personal preferences.",
+      start: "06/01/2016",
+      end:"07/01/2016",
+      role: "Software Engineer",
+      accomplishments: [
+        "Constructed 5+ self-contained, reusable, and testable ReactJS components to render itineraries and events.",
+        "Incorporated Mapbox, Nomad and Yelp API’s into ReactJS front-end to visually display user’s itineraries.",
+        "Designed responsive UI for front-end views with HTML5, CSS3, and Bootstrap grid system for proper display across 6+ major browsers."
+      ]
+    },
+    {
+      name: "Gifstorian",
+      index: 4,
+      desc:" GIF recorder and searching tool where users can find and store .gif files that best capture their range of online emotions.",
+      start: "06/01/2016",
+      end:"07/01/2016",
+      accomplishments:[
+        " Built custom AngularJS directive to upload multipart form data to AWS S3 storage for persistence of GIF files.",
+        "Integrated Giphy API into Node.js and Express server for gif searching, displaying animations on JavaScript and AngularJS front-end views."
+      ]
+    }
   ]
 }
