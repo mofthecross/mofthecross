@@ -83,5 +83,74 @@ module.exports = {
         "Integrated Giphy API into Node.js and Express server for gif searching, displaying animations on JavaScript and AngularJS front-end views."
       ]
     }
+  ],
+
+  skills: [
+    {
+      name: "ReactJS", value: 8
+    },
+    {
+      name: "AngularJS", value: 7
+    },
+    {
+      name: "BackboneJS", value: 6
+    },
+    {
+      name: "jQuery", value: 6
+    },
+    {
+      name: "Javascript", value: 9
+    },
+    {
+      name: "Swift", value: 6
+    },
+    {
+      name: "Socket.IO", value: 7
+    },
+    {
+      name: "ES6", value: 8
+    },
+    {
+      name: "NodeJS", value: 7
+    },
+    {
+      name: "ExpressJS", value: 6
+    },
+    {
+      name: "WebRTC", value: 6
+    },
+    {
+      name: "CSS", value: 7
+    },
+    {
+      name: "HTML5", value: 8
+    },
+    {
+      name: "D3js", value: 7
+    },
+    {
+      name: "redis", value: 5
+    },
+    {
+      name: "postgreSQL", value: 4
+    },
+    {
+      name: "mongoDB", value: 7
+    },
+    {
+      name: "Jasmine", value: 6
+    },
+    {
+      name: "Mocha", value: 8
+    },
+    {
+      name: "Webpack", value: 6
+    },
+    {
+      name: "Babel", value: 8
+    },
+    {
+      name: "AWS", value: 5
+    }
   ]
 }

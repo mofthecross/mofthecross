@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Project = props => (
-  <li className="school-wrapper">
-    <h4 className="school__degree">{props.project}</h4>
+  <li className="resume-sub-block-wrapper">
+    <h4 className="resume-sub-block__degree">{props.project}</h4>
 
-    <p className="school__school"> { props.desc} {props.start} - {props.end}</p>
+    <p> { props.desc} {props.start} - {props.end}</p>
     <ul>
       {
         props.accomplishments.map(accomplishment => {
@@ -20,9 +20,9 @@ const Project = props => (
 
 const FeatProjects = (props) => {
   return (
-    <div className="education-wrapper">
-      <h3 className="education__header">Projects</h3>
-      <ul className="education__schools">
+    <div className="resume-block-wrapper">
+      <h3 className="resume-block__header">Projects</h3>
+      <ul className="resume-block__list">
         { props.projects.map( project=> {
           return (
             <Project

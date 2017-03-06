@@ -5,7 +5,7 @@ const data = [
     index: true,
   },
   {
-    link: '/about',
+    link: '/skills',
     label: 'About',
   },
   {
