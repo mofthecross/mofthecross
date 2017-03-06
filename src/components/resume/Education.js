@@ -2,17 +2,17 @@ import React from 'react';
 
 
 const School = props => (
-  <li className="school-wrapper">
-    <h4 className="school__degree">{props.degree}</h4>
-    <p className="school__school"><a href={props.link}>{props.school}</a>, {props.year}</p>
+  <li className="resume-sub-block-wrapper">
+    <h4>{props.degree}</h4>
+    <p><a href={props.link}>{props.school}</a>, {props.year}</p>
   </li>
 )
 
 const Education = (props) => {
   return (
-    <div className="education-wrapper">
-      <h3 className="education__header">Education</h3>
-      <ul className="education__schools">
+    <div className="resume-block-wrapper">
+      <h3 className="resume-block__header">Education</h3>
+      <ul className="resume-block__list">
         { props.degrees.map(degree => {
           return (
             <School

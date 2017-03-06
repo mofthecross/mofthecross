@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Company = props => (
-  <li className="school-wrapper">
-    <h4 className="school__degree">{props.company}</h4>
-    <p className="school__school"> {props.start} - {props.end}</p>
+  <li className="resume-sub-block-wrapper">
+    <h4>{props.company}</h4>
+    <p> {props.start} - {props.end}</p>
     <ul>
       {props.accomplishments.map(accomplishment => {
         return <li key={accomplishment}>
@@ -17,9 +17,9 @@ const Company = props => (
 const Experience = (props) => {
 
   return (
-    <div className="education-wrapper">
-      <h3 className="education__header">Experience</h3>
-      <ul className="education__schools">
+    <div className="resume-block-wrapper">
+      <h3 className="resume-block__header">Experience</h3>
+      <ul className="resume-block__list">
         { props.companies.map(company => {
           return (
             <Company
